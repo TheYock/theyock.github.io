@@ -498,6 +498,31 @@ a {
   font-weight: 800;
 }
 
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  min-height: 210px;
+  padding: 1.25rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.skill-card h3 {
+  margin: 0 0 0.8rem;
+  font-size: 1.2rem;
+}
+
+.skill-card p {
+  margin: 0;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
 .project-card {
   min-height: 330px;
   display: flex;
@@ -551,10 +576,6 @@ a {
   align-items: start;
 }
 
-.skill-list p {
-  margin-top: 0;
-}
-
 .contact {
   min-height: 52vh;
 }
@@ -568,6 +589,7 @@ a {
 
   .hero-layout,
   .project-grid,
+  .skill-grid,
   .experience-item,
   .two-column {
     grid-template-columns: 1fr;
