@@ -466,6 +466,38 @@ a {
   gap: 1rem;
 }
 
+.experience-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.45fr) minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1.35rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.experience-item h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.experience-item p {
+  margin-top: 0;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.experience-date {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
 .project-card {
   min-height: 330px;
   display: flex;
@@ -536,6 +568,7 @@ a {
 
   .hero-layout,
   .project-grid,
+  .experience-item,
   .two-column {
     grid-template-columns: 1fr;
   }

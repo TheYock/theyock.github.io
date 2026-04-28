@@ -8,6 +8,7 @@ Static portfolio site for George Yockachonis, designed to run directly on GitHub
 - `portfolio.html` - main portfolio page
 - `styles.css` - responsive layout, splash screen, and visual design
 - `script.js` - YOCK entry animation and reduced-motion handling
+- `GYockachonis Resume.docx` - downloadable resume linked from the hero buttons
 
 ## Local Preview
 
@@ -30,5 +31,5 @@ https://theyock.github.io/
 ## Before Publishing
 
 - Add your preferred email or LinkedIn link to the contact section when ready.
-- Add a resume PDF and link it from the hero if you want a resume download.
+- Replace the resume file when you have an updated version.
 - Add more project source links as the repositories are ready to share.
