@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="George Yockachonis portfolio: software development, game tooling, web apps, and IT systems work."
+  />
+  <title>George Yockachonis | Software Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <noscript>
+    <style>
+      .noscript-link {
+        display: inline-flex;
+      }
+
+      #enterBtn {
+        display: none;
+      }
+    </style>
+  </noscript>
+</head>
+<body>
+  <section id="splash" aria-label="Portfolio entry animation">
+    <div class="split split-top"></div>
+    <div class="split split-bottom"></div>
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+    <div id="brandWrap">
+      <div class="brand brand-top">YOCK</div>
+      <div class="brand brand-bottom">YOCK</div>
+    </div>
+
+    <div class="identity">
+      <p class="intro">Portfolio of</p>
+      <p class="name">George Yockachonis</p>
+      <p class="role">Game Developer | Software Engineer | IT Systems</p>
+      <a class="noscript-link" href="portfolio.html">Open Portfolio</a>
+      <button id="enterBtn" type="button">
+        Enter Portfolio
+      </button>
+    </div>
+  </section>
+
+  <main id="portfolio" class="hidden preview-portfolio" aria-hidden="true">
+    <nav class="nav" aria-label="Preview navigation">
+      <span class="logo">YOCK</span>
+      <div class="nav-links">
+        <span>Projects</span>
+        <span>Skills</span>
+        <span>About</span>
+        <span>Contact</span>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-layout">
+        <div>
+          <p class="eyebrow">George Yockachonis</p>
+          <h1>Software developer building practical systems, web apps, and game tools.</h1>
+          <p class="hero-copy">
+            I work across full-stack JavaScript, custom game engine tooling, and IT systems.
+            I like projects where code meets infrastructure: multiplayer prototypes, editors,
+            monitoring workflows, APIs, and the tools that make teams move faster.
+          </p>
+          <div class="hero-actions">
+            <span class="primary">View Projects</span>
+            <span class="secondary">GitHub</span>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="Preview snapshot">
+          <p class="panel-kicker">Focus</p>
+          <ul>
+            <li>Full-stack JavaScript apps</li>
+            <li>Real-time multiplayer prototypes</li>
+            <li>Custom 2D engine and editor tooling</li>
+            <li>IT operations, networking, and monitoring</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
