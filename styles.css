@@ -478,6 +478,7 @@ a {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
+  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
 .experience-item h3 {
@@ -509,6 +510,7 @@ a {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
+  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
 .skill-card h3 {
@@ -522,6 +524,39 @@ a {
   color: var(--muted);
 }
 
+.build-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.build-card {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.35rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.build-card h3 {
+  margin: 0;
+  font-size: 1.45rem;
+}
+
+.build-card p {
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.build-card-muted {
+  background: rgba(255, 255, 255, 0.04);
+}
+
 .project-card {
   min-height: 330px;
   display: flex;
@@ -532,6 +567,21 @@ a {
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.34);
+  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.project-card:hover,
+.project-card:focus-within,
+.build-card:hover,
+.build-card:focus-within,
+.skill-card:hover,
+.skill-card:focus-within,
+.experience-item:hover,
+.experience-item:focus-within {
+  background: #181818;
+  border-color: rgba(245, 245, 240, 0.34);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+  transform: translateY(-3px);
 }
 
 .project-card h3 {
@@ -589,6 +639,7 @@ a {
   .hero-layout,
   .project-grid,
   .skill-grid,
+  .build-grid,
   .experience-item,
   .two-column {
     grid-template-columns: 1fr;
