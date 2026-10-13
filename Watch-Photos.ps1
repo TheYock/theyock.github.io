@@ -4,7 +4,7 @@ $listPath = Join-Path $siteFolder 'project-photos.js'
 
 function Update-Photos {
     $photos = [ordered]@{}
-    foreach ($project in @('asher', 'openrealm', 'haunted-house-director', 'tooling')) {
+    foreach ($project in @('asher', 'openrealm', 'haunted-house-director')) {
         $folder = Join-Path $siteFolder "images/$project"
         $photos[$project] = @(Get-ChildItem -LiteralPath $folder -File |
             Where-Object { $_.Extension -match '^\.(png|jpe?g|gif|webp|avif|svg)$' } |

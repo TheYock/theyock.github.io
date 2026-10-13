@@ -1,2 +1,2 @@
 // Automatically generated from the images folders. Do not edit.
-window.projectPhotos = {"asher":[],"openrealm":[],"haunted-house-director":[],"tooling":[]};
+window.projectPhotos = {"asher":[],"openrealm":[],"haunted-house-director":[]};

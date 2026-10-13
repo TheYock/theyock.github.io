@@ -41,7 +41,8 @@ Put pictures directly in these folders:
 - `images/asher/` for Asher Engine
 - `images/openrealm/` for Project OpenRealm
 - `images/haunted-house-director/` for Haunted House Director
-- `images/tooling/` for IT / Network Tooling
+
+IT / Network Tooling is a text-only card and does not have a photo area.
 
 PNG, JPG, JPEG, GIF, WebP, AVIF, and SVG files are supported. Use any filenames.
 Only files directly in those folders are included, not subfolders. Prefix names
