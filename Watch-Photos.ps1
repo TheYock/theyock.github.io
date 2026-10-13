@@ -4,7 +4,7 @@ $listPath = Join-Path $siteFolder 'project-photos.js'
 
 function Update-Photos {
     $photos = [ordered]@{}
-    foreach ($project in @('asher', 'openrealm', 'tooling')) {
+    foreach ($project in @('asher', 'openrealm', 'haunted-house-director', 'tooling')) {
         $folder = Join-Path $siteFolder "images/$project"
         $photos[$project] = @(Get-ChildItem -LiteralPath $folder -File |
             Where-Object { $_.Extension -match '^\.(png|jpe?g|gif|webp|avif|svg)$' } |
@@ -19,7 +19,7 @@ function Update-Photos {
 
 Update-Photos
 Start-Process (Join-Path $siteFolder 'portfolio.html')
-Write-Host 'Drop pictures into images/asher, images/openrealm, or images/tooling.'
+Write-Host 'Drop pictures into the matching project folder inside images.'
 Write-Host 'Leave this window open while adding photos. Refresh the browser after changes.'
 Write-Host 'Close this window when finished.'
 while ($true) {

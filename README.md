@@ -40,6 +40,7 @@ Put pictures directly in these folders:
 
 - `images/asher/` for Asher Engine
 - `images/openrealm/` for Project OpenRealm
+- `images/haunted-house-director/` for Haunted House Director
 - `images/tooling/` for IT / Network Tooling
 
 PNG, JPG, JPEG, GIF, WebP, AVIF, and SVG files are supported. Use any filenames.

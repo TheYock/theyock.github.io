@@ -1,7 +1,8 @@
 async function loadProjectPhotos() {
   // GitHub Pages does not provide directory listings. Use its public repository API.
   if (location.hostname !== "theyock.github.io") return;
-  await Promise.all(["asher", "openrealm", "tooling"].map(async (key) => {
+  const projects = [...document.querySelectorAll("[data-project-gallery]")].map((gallery) => gallery.dataset.projectGallery);
+  await Promise.all(projects.map(async (key) => {
     try {
       const response = await fetch(`https://api.github.com/repos/theyock/theyock.github.io/contents/images/${key}`);
       if (!response.ok) return; // Keep the generated local list if the API is unavailable.
